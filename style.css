@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.text-loading {
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+
+/********************************* MOBILE FIRST ***************************************/
+
+.container {
+    filter: blur(0px);
+    max-width: 700px;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center
+}
+
+.text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 35px auto;
+}
+
+.text {
+    font-size: 1rem;
+    position: absolute;
+    color: #fff;
+    opacity: 0;
+    text-transform: uppercase;
+}
+
+#text1 {
+    animation: showText 1s 3s;
+}
+
+#text2 {
+    animation: showSecondText 1s 4s;
+    color: #249446;
+}
+
+#text3 {
+    animation: showFinalText 1.5s 5s;
+    display: flex;
+    flex-direction: row;
+}
+
+
+@keyframes showText {
+    from {
+        opacity: 0;
+        font-size: 1rem;
+    }
+
+    50% {
+        opacity: 1;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    to {
+        opacity: 0;
+        font-size: 1rem;
+    }
+}
+
+@keyframes showSecondText {
+    from {
+        opacity: 0;
+        font-size: 1rem;
+    }
+
+    50% {
+        opacity: 1;
+        font-size: 2.1rem;
+        font-weight: bold;
+    }
+
+    to {
+        opacity: 0;
+        font-size: 1rem;
+    }
+}
+
+@keyframes showFinalText {
+    from {
+        opacity: 0;
+        font-size: 1.4rem;
+    }
+
+    to {
+        opacity: 1;
+        font-size: 2.5rem;
+        font-weight: bolder;
+    }
+}
+
+/******************************** SCREEN FROM 768px **************************************/
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 900px;
+    }
+
+    .text-container {
+        width: 800px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 35px auto;
+    }
+
+    .text {
+        font-size: 2rem;
+        position: absolute;
+        color: #fff;
+        opacity: 0;
+        text-transform: uppercase;
+    }
+
+    @keyframes showText {
+        from {
+            opacity: 0;
+            font-size: 2rem;
+        }
+    
+        50% {
+            opacity: 1;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+    
+        to {
+            opacity: 0;
+            font-size: 2rem;
+        }
+    }
+    
+    @keyframes showSecondText {
+        from {
+            opacity: 0;
+            font-size: 2rem;
+        }
+    
+        50% {
+            opacity: 1;
+            font-size: 3.2rem;
+            font-weight: bold;
+        }
+    
+        to {
+            opacity: 0;
+            font-size: 2rem;
+        }
+    }
+    
+    @keyframes showFinalText {
+        from {
+            opacity: 0;
+            font-size: 2.8rem;
+        }
+    
+        to {
+            opacity: 1;
+            font-size: 4rem;
+            font-weight: bolder;
+        }
+    }
+}

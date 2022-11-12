@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  width: 100%;
+  background-color: #249446;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.panel {
+  color: #000;
+  flex: 1;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+  font-size: 2.4rem;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  margin: 0;
+  transform: rotate(90deg);
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in 0.4s;
+}
+
+.about-container {
+  opacity: 0;
+}
+
+
+.club {
+  height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), url(../ressources/logo-ifs.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.nf1 {
+  height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(36, 148, 70, 0.5)), url(../ressources/brief.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.partners {
+  height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), url(../ressources/ville-ifs.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.shop {
+  height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), url(../ressources/shop.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.contact {
+  height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(36, 148, 70, 0.5)), url(../ressources/enveloppe.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .panel.active {
+    flex: 6
+  }
+
+  .panel h3 {
+    transform: rotate(0deg);
+    top: 20px;
+  }
+}
