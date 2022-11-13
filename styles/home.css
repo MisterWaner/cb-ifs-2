@@ -16,39 +16,38 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   height: 100vh;
-  width: 100%;
-  background-color: #249446;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  margin: 0;
 }
 
 .container {
   display: flex;
-  width: 100%;
+  width: 100vw;
 }
 
 .panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
   color: #000;
-  flex: 1;
+  flex: 2;
   position: relative;
   transition: flex 0.7s ease-in;
 }
 
 .panel h3 {
-  font-size: 3rem;
+  font-size: 2.4rem;
   position: absolute;
-  top: 50px;
-  left: 20px;
-  margin: 0;
-  padding: 1.4rem;
+  top: 6rem;
+  left: 2.4rem;
   transform: rotate(90deg);
 }
 
 .panel.active {
-  flex: 5;
+  flex: 6;
 }
 
 .panel.active h3 {
@@ -56,111 +55,16 @@ body {
   transition: transform 0.3s ease-in 0.4s;
 }
 
-.panel .about-container {
+.about {
   position: absolute;
-  width: 90%;
-  opacity: 0;
-  border: 2px #f1f1f1 solid;
-  border-radius: 10px;
-  font-size: 1.6rem;
   top: 40%;
-  padding: 10px;
-  font-weight: bold;
-  margin-left: 5%;
-  color: #f1f1f1;
+  left: 20%;
 }
 
-.about-container > p {
-  margin-bottom: 10px;
-}
-
-.about-container .list-container .list-item {
-  list-style-type: none;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 2rem;
-}
-
-.about-container a {
-  text-decoration: none;
-  border-radius: 5px;
-  outline: none;
-  color: #f1f1f1;
-  background-color: #249446;
-}
-
-.panel.active .about-container {
-  opacity: 1;
-  transition: opacity 0.3s ease-in 0.4s
-}
-
-
-.club {
-  height: 100vh;
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), url(../ressources/logo-ifs.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.nf1 {
-  height: 100vh;
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(36, 148, 70, 0.5)), url(../ressources/brief.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.partners {
-  height: 100vh;
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), url(../ressources/ville-ifs.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.job {
-  height: 100vh;
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(36, 148, 70, 0.5));
-}
-
-.shop {
-  height: 100vh;
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), url(../ressources/shop.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.contact {
-  height: 100vh;
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(36, 148, 70, 0.5)), url(../ressources/enveloppe.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .container {
     display: flex;
     flex-direction: column;
-    height: 100%;
-  }
-
-  .panel.active {
-    flex: 6
-  }
-
-  .panel h3 {
-    transform: rotate(0deg);
-    top: 20px;
-    font-size: 2.5rem;
-    padding: 5px;
-  }
-
-  .about-container:nth-child(1) {
-    padding: 5px;
-    position: absolute;
-    top: 30%;
+    height: 100vh;
   }
 }
