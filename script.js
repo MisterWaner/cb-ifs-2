@@ -1,25 +1,19 @@
-const loadingText = document.querySelector('.text-loading');
+const home = document.querySelector('.home');
+const shop = document.querySelector('.shop');
 const container = document.querySelector('.container');
 
-let load = 0
+home.addEventListener('mouseenter', () => {
+    container.classList.add('hover-home');
+});
+home.addEventListener('mouseleave', () => {
+    container.classList.remove('hover-home');
+});
 
-let int = setInterval(blurring, 30);
-
-const scale = (num, in_min, in_max, out_min, out_max) => {
-    return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
-}
-
-function blurring() {
-
-    load++
-
-    if (load > 99) {
-        clearInterval(int);
-    };
-
-    loadingText.innerText = `${load}%`;
-    loadingText.style.opacity = scale(load, 0, 100, 1, 0);
-    container.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`;
-}
+shop.addEventListener('mouseenter', () => {
+    container.classList.add('hover-shop');
+});
+shop.addEventListener('mouseleave', () => {
+    container.classList.remove('hover-shop');
+});
 
 

@@ -38,11 +38,12 @@ body {
 }
 
 .panel h3 {
-  font-size: 2.4rem;
+  font-size: 3rem;
   position: absolute;
   top: 50px;
   left: 20px;
   margin: 0;
+  padding: 1.4rem;
   transform: rotate(90deg);
 }
 
@@ -55,8 +56,42 @@ body {
   transition: transform 0.3s ease-in 0.4s;
 }
 
-.about-container {
+.panel .about-container {
+  position: absolute;
+  width: 90%;
   opacity: 0;
+  border: 2px #f1f1f1 solid;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  top: 40%;
+  padding: 10px;
+  font-weight: bold;
+  margin-left: 5%;
+  color: #f1f1f1;
+}
+
+.about-container > p {
+  margin-bottom: 10px;
+}
+
+.about-container .list-container .list-item {
+  list-style-type: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.about-container a {
+  text-decoration: none;
+  border-radius: 5px;
+  outline: none;
+  color: #f1f1f1;
+  background-color: #249446;
+}
+
+.panel.active .about-container {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s
 }
 
 
@@ -79,9 +114,14 @@ body {
 .partners {
   height: 100vh;
   background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), url(../ressources/ville-ifs.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.job {
+  height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(36, 148, 70, 0.5));
 }
 
 .shop {
@@ -114,5 +154,13 @@ body {
   .panel h3 {
     transform: rotate(0deg);
     top: 20px;
+    font-size: 2.5rem;
+    padding: 5px;
+  }
+
+  .about-container:nth-child(1) {
+    padding: 5px;
+    position: absolute;
+    top: 30%;
   }
 }

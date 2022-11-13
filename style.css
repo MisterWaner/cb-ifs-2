@@ -8,186 +8,148 @@
     padding: 0;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     overflow: hidden;
-    background-color: #000;
 }
-
-.text-loading {
-    position: absolute;
-    top: 60px;
-    display: none;
-}
-
-/********************************* MOBILE FIRST ***************************************/
 
 .container {
-    filter: blur(0px);
-    max-width: 700px;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #249446;
 }
 
-.text-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 35px auto;
+.split {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
 }
 
-.text {
-    font-size: 1rem;
+h2 {
     position: absolute;
     color: #fff;
-    opacity: 0;
+    font-size: 4rem;
+    left: 50%;
+    top: 20%;
     text-transform: uppercase;
+    transform: translateX(-50%);
+    white-space: nowrap;
 }
 
-#text1 {
-    animation: showText 1s 3s;
-}
-
-#text2 {
-    animation: showSecondText 1s 4s;
-    color: #249446;
-}
-
-#text3 {
-    animation: showFinalText 1.5s 5s;
+.btn {
+    position: absolute;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    left: 50%;
+    top: 45%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: #fff;
+    border: 0.2rem solid #fff;
+    font-size: 1.6rem;
+    width: 15rem;
+    padding: 1.5rem;
+}
+.split.home .btn:hover{
+    background-color: #249446;
+    border-color: #249446;
+}
+.split.shop .btn:hover{
+    background-color: #249446;
+    border-color: #249446;
 }
 
-
-@keyframes showText {
-    from {
-        opacity: 0;
-        font-size: 1rem;
-    }
-
-    50% {
-        opacity: 1;
-        font-size: 2rem;
-        font-weight: bold;
-    }
-
-    to {
-        opacity: 0;
-        font-size: 1rem;
-    }
+.split.home {
+    left: 0;
+    background: url('./ressources/images/win-game.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.split.home::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(36, 148, 70, 0.65);
 }
 
-@keyframes showSecondText {
-    from {
-        opacity: 0;
-        font-size: 1rem;
-    }
-
-    50% {
-        opacity: 1;
-        font-size: 2.1rem;
-        font-weight: bold;
-    }
-
-    to {
-        opacity: 0;
-        font-size: 1rem;
-    }
+.split.shop {
+    right: 0;
+    background: url('./ressources/images/shop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.split.shop::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-@keyframes showFinalText {
-    from {
-        opacity: 0;
-        font-size: 1.4rem;
-    }
+.split.home,
+.split.shop,
+.split.home::before,
+.split.shop::before {
+    transition: all 1000ms ease-in-out;
+}
 
-    to {
-        opacity: 1;
+.hover-home .home {
+    width: 75%;
+}
+.hover-home .shop {
+    width: 25%;
+}
+.hover-shop .shop {
+    width: 75%;
+}
+.hover-shop .home {
+    width: 25%;
+}
+
+@media screen and (max-width: 767px) {
+    h2{
         font-size: 2.5rem;
-        font-weight: bolder;
     }
-}
-
-/******************************** SCREEN FROM 768px **************************************/
-
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 900px;
+    .btn {
+        width: 12rem;
     }
-
-    .text-container {
-        width: 800px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin: 35px auto;
+    .split {
+        width: 100%;
+        height: 50%;
     }
-
-    .text {
-        font-size: 2rem;
-        position: absolute;
-        color: #fff;
-        opacity: 0;
-        text-transform: uppercase;
+    .split.home {
+        top: 0;
     }
-
-    @keyframes showText {
-        from {
-            opacity: 0;
-            font-size: 2rem;
-        }
-    
-        50% {
-            opacity: 1;
-            font-size: 3rem;
-            font-weight: bold;
-        }
-    
-        to {
-            opacity: 0;
-            font-size: 2rem;
-        }
+    .split.shop {
+        bottom: 0;
     }
-    
-    @keyframes showSecondText {
-        from {
-            opacity: 0;
-            font-size: 2rem;
-        }
-    
-        50% {
-            opacity: 1;
-            font-size: 3.2rem;
-            font-weight: bold;
-        }
-    
-        to {
-            opacity: 0;
-            font-size: 2rem;
-        }
+    .hover-home .home {
+        height: 75%;
+        width: 100%;
     }
-    
-    @keyframes showFinalText {
-        from {
-            opacity: 0;
-            font-size: 2.8rem;
-        }
-    
-        to {
-            opacity: 1;
-            font-size: 4rem;
-            font-weight: bolder;
-        }
+    .hover-home .shop {
+        height: 25%;
+        width: 100%;
+    }
+    .hover-shop .shop {
+        height: 75%;
+        width: 100%;
+    }
+    .hover-shop .home {
+        height: 25%;
+        width: 100%;
     }
 }
