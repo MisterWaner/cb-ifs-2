@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+}
+
+
+/************************************* NAVBAR *********************************/
+header {
+    width: 100%;
+    height: 7rem;
+    background-color: #249446;
+    user-select: none;
+    display: inline-flex;
+    box-shadow: inset 0px -1px 0px #000;
+}
+
+.logo {
+    cursor: pointer;
+    width: 7rem;
+    margin-left: 1.5rem;
+}
+
+.menu-container {
+    width: 100%;
+    line-height: 7rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: #f1f1f1;
+    margin: 0 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+.menu-item:hover {
+    color: #000;
+}
+
+.btn-menu-toggle {
+    display: none;
+}
+
+/*********************************************** MAIN CONTENT ******************************************/
+.container {
+    max-width: 1250px;
+    height: 900px;
+}
+@media screen and(max-width: 1150px) {
+    .container {
+        max-width: 1000px;
+    }
+
+}
+
+.container h2 {
+    text-align: center;
+    letter-spacing: 0.3rem;
+    font-size: 4rem;
+    background-image: linear-gradient(to right, #000, #249446);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.container1 {
+    height: auto;
+    margin: 2rem auto;
+}
+
+.content1 {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+}
+@media screen and (max-width: 1150px) {
+    .content1 {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
+
+.card {
+    margin: 1.5rem;
+    height: 40rem;
+    width: 30rem;
+    border-radius: 1rem;
+    background: #808080;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 70px 63px -60px #249446;
+    transition: background 0.8s;
+}
+.border {
+    height: 39rem;
+    border-radius: 1rem;
+    width: 29rem;
+    position: relative;
+    transition: border 1s;
+    background: transparent;
+    color: transparent;
+}
+.border:hover {
+    border: 1px solid #f1f1f1;
+}
+
+h3 {
+    font-size: 2.5rem;
+    margin: 1.5rem;
+}
+
+.stat {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 13rem;
+    width: 12rem;
+    bottom: 2rem;
+    left: 1rem;
+    font-size: 1.5rem;
+}
+
+h3, .stat {
+    color: #f1f1f1;
+    opacity: 0;
+}
+
+.card:hover h3, 
+.card:hover .stat {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.card1 {
+    background: url('../ressources/images/mj.jpg') center center no-repeat;
+    background-size: 42rem;
+}
+.card2 {
+    background: url('../ressources/images/kobe.jpg') center center no-repeat; 
+    background-size: 42rem;
+    
+}
+.card3 {
+    background: url('../ressources/images/pippen.jpg') top center no-repeat; 
+    background-size: 42rem;
+}
+.card4 {
+    background: url('../ressources/images/ju2.jpg') center center no-repeat; 
+    background-size: 42rem;
+}
+.card5 {
+    background: url('../ressources/images/marou.jpg') center center no-repeat; 
+    background-size: 42rem;
+}
+.card6 {
+    background: url('../ressources/images/ax.jpg') center center no-repeat; 
+    background-size: 42rem;
+}
+.card7 {
+    background: url('../ressources/images/tipi.jpg') center center no-repeat; 
+    background-size: 42rem;
+}
+.card8 {
+    background: url('../ressources/images/nico-batum.jpg') center center no-repeat; 
+    background-size: 42rem;
+    
+}
+.card8 h3,
+.card8 .stat {
+    color: #249446;
+}
+.card8 .border:hover {
+    border: 1px solid #249446;
+}
+.card9 {
+    background: url('../ressources/images/Shaq.jpg') center center no-repeat; 
+    background-size: 42rem;
+}
+.card10 {
+    background: url('../ressources/images/evan-fournier.jpg') center center no-repeat; 
+    background-size: 42rem;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover,
+.card5:hover,
+.card6:hover,
+.card7:hover,
+.card8:hover,
+.card9:hover,
+.card10:hover {
+    background-size: 52rem;
+}
+.card1:hover,
+.card3:hover,
+.card5:hover,
+.card7:hover,
+.card8:hover,
+.card9:hover {
+    background-position: top center;
+}
+.card2:hover,
+.card4:hover,
+.card6:hover,
+.card10:hover {
+    background-position: center center;
+}
+
+#btn-to-top {
+    font-size: 6rem;
+    color: #249446;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s, color 0.5s;
+}
+#btn-to-top:hover {
+    color: #000;
+}
+#btn-to-top.show {
+    opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+    /******************** NAVBAR ***********************/
+    header {
+        position: relative;
+    }
+    .logo {
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 0;
+    }
+    .menu-container {
+        width: 100%;
+        position: absolute;
+        display: none;
+        background-color: #24944693;
+        top: 7rem;
+        font-size: 1.7rem;
+        line-height: unset;
+        padding: 2rem;
+        text-transform: uppercase;
+        border-bottom: 1px solid #000;
+        transform: translateY(-100%);
+        font-weight: bolder;
+        z-index: 9999;
+    }
+    .open {
+        transform: translateY(0%);
+        display: block;
+        transition: transform 0.3s ease-out;
+    } 
+    .menu-item {
+        margin: 1rem 0;
+        display: block;
+    }
+
+    .btn-menu-toggle {
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        position: absolute;
+        right: 2rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .lines {
+        width: 100%;
+        height: 2px;
+        border-radius: 5px;
+        background-color: #f1f1f1;
+        position: absolute;
+        transition: all 0.3s ease-in-out;
+    }
+    .lines:nth-child(1) {
+        top: 0px;
+    }
+    .lines:nth-child(2) {
+        top: 12px;
+    }
+    .lines:nth-child(3) {
+        top: 24px;
+    }
+    .btn-menu-toggle.active .lines:nth-child(1) {
+        top: 9px;
+        transform: rotate(135deg);
+    }
+    
+    .btn-menu-toggle.active .lines:nth-child(3) {
+        top: 9px;
+        transform: rotate(-135deg);
+    }
+    .btn-menu-toggle.active .lines:nth-child(2) {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    .container1 {
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .content1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #btn-to-top {
+        font-size: 4rem;
+        bottom: 1rem;
+        right: 1rem;
+    }
+    
+}
