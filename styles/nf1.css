@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Hey August';
+    src: url(../fonts/Hey\ August.ttf) format(truetype);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 *, ::before, ::after {
@@ -8,6 +13,10 @@
 
 html {
     font-size: 62.5%;
+}
+
+:root {
+    --green-color: #008348;
 }
 
 body {
@@ -22,32 +31,36 @@ body {
 header {
     width: 100%;
     height: 7rem;
-    background-color: #249446;
+    background-color: var(--green-color);
     user-select: none;
     display: inline-flex;
     box-shadow: inset 0px -1px 0px #000;
 }
 
 .logo {
-    cursor: pointer;
     width: 7rem;
     margin-left: 1.5rem;
+    cursor: pointer;
 }
 
 .menu-container {
     width: 100%;
     line-height: 7rem;
-    font-size: 2.5rem;
     text-align: center;
 }
-
+.home-item {
+    line-height: 7rem;
+}
+.home-item,
 .menu-item {
+    font-size: 2.5rem;
     text-decoration: none;
     color: #f1f1f1;
     margin: 0 1rem;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
 }
+.home-item:hover,
 .menu-item:hover {
     color: #000;
 }
@@ -107,7 +120,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0 70px 63px -60px #249446;
+    box-shadow: 0 70px 63px -60px var(--green-color);
     transition: background 0.8s;
 }
 .border {
@@ -115,17 +128,18 @@ header {
     border-radius: 1rem;
     width: 29rem;
     position: relative;
-    transition: border 1s;
+    transition: border 0.5s;
     background: transparent;
     color: transparent;
 }
 .border:hover {
-    border: 1px solid #f1f1f1;
+    border: 2px solid var(--green-color)
 }
 
 h3 {
     font-size: 2.5rem;
     margin: 1.5rem;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
 }
 
 .stat {
@@ -142,7 +156,7 @@ h3 {
 }
 
 h3, .stat {
-    color: #f1f1f1;
+    color: var(--green-color);
     opacity: 0;
 }
 
@@ -188,10 +202,11 @@ h3, .stat {
 }
 .card8 h3,
 .card8 .stat {
-    color: #249446;
+    color: var(--green-color);
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
 }
 .card8 .border:hover {
-    border: 1px solid #249446;
+    border: 2px solid var(--green-color);
 }
 .card9 {
     background: url('../ressources/images/Shaq.jpg') center center no-repeat; 
@@ -231,7 +246,7 @@ h3, .stat {
 
 #btn-to-top {
     font-size: 6rem;
-    color: #249446;
+    color: var(--green-color);
     position: fixed;
     bottom: 2rem;
     right: 2rem;
@@ -246,6 +261,12 @@ h3, .stat {
     opacity: 1;
 }
 
+@media screen and (max-width: 950px) {
+    .home-item,
+    .menu-item {
+        font-size: 1.8rem;
+    }
+}
 @media screen and (max-width: 767px) {
     /******************** NAVBAR ***********************/
     header {
@@ -258,11 +279,18 @@ h3, .stat {
         transform: translateY(-50%);
         margin-left: 0;
     }
+    .home-item {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2.3rem;
+    }
     .menu-container {
         width: 100%;
         position: absolute;
         display: none;
-        background-color: #24944693;
+        background-color: rgba(0, 131, 72, 0.576);
         top: 7rem;
         font-size: 1.7rem;
         line-height: unset;
@@ -342,6 +370,7 @@ h3, .stat {
         font-size: 4rem;
         bottom: 1rem;
         right: 1rem;
+        color: var(--green-color);
     }
     
 }

@@ -32,8 +32,6 @@ body {
 
 .panel-wrapper {
   display: flex;
-  /* flex-direction: column;
-  align-items: center; */
   flex-wrap: wrap;
 }
 
@@ -70,7 +68,7 @@ body {
 }
 
 h3 {
-  background-color: rgba(19, 221, 32, 0.85);
+  background-color: rgba(0, 131, 72, 0.9);
   color: #f1f1f1;
   width: 100%;
   height: 100%;
@@ -160,7 +158,7 @@ h3 {
 
 .btn:hover {
   background-color: #f1f1f1;
-  color: #42ce09;
+  color: #008348;
 }
 
 @media screen and (max-width: 1200px) {
