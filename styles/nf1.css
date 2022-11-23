@@ -167,54 +167,47 @@ h3, .stat {
 }
 
 .card1 {
-    background: url('../ressources/images/mj.jpg') center center no-repeat;
+    background: url('../ressources/images/ju2.jpg') center center no-repeat;
     background-size: 42rem;
 }
 .card2 {
-    background: url('../ressources/images/kobe.jpg') center center no-repeat; 
+    background: url('../ressources/images/ax.jpg') center center no-repeat; 
     background-size: 42rem;
     
 }
 .card3 {
-    background: url('../ressources/images/pippen.jpg') top center no-repeat; 
+    background: url('../ressources/images/marou.jpg') top center no-repeat; 
     background-size: 42rem;
 }
 .card4 {
-    background: url('../ressources/images/ju2.jpg') center center no-repeat; 
+    background: url('../ressources/images/carla3.jpg') top center no-repeat; 
     background-size: 42rem;
 }
 .card5 {
-    background: url('../ressources/images/marou.jpg') center center no-repeat; 
+    background: url('../ressources/images/florine.jpg') center center no-repeat; 
     background-size: 42rem;
 }
 .card6 {
-    background: url('../ressources/images/ax.jpg') center center no-repeat; 
+    background: url('../ressources/images/fayzat2.jpg') top center no-repeat; 
     background-size: 42rem;
 }
 .card7 {
-    background: url('../ressources/images/tipi.jpg') center center no-repeat; 
+    background: url('../ressources/images/kendall.jpg') center center no-repeat; 
     background-size: 42rem;
 }
 .card8 {
-    background: url('../ressources/images/nico-batum.jpg') center center no-repeat; 
+    background: url('../ressources/images/lucile.jpg') center center no-repeat; 
     background-size: 42rem;
     
 }
-.card8 h3,
-.card8 .stat {
-    color: var(--green-color);
-    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
-}
-.card8 .border:hover {
-    border: 2px solid var(--green-color);
-}
 .card9 {
-    background: url('../ressources/images/Shaq.jpg') center center no-repeat; 
+    background: url('../ressources/images/coumba.jpg') center center no-repeat; 
     background-size: 42rem;
 }
 .card10 {
     background: url('../ressources/images/evan-fournier.jpg') center center no-repeat; 
     background-size: 42rem;
+    
 }
 
 .card1:hover,
@@ -229,17 +222,18 @@ h3, .stat {
 .card10:hover {
     background-size: 52rem;
 }
-.card1:hover,
+
 .card3:hover,
-.card5:hover,
-.card7:hover,
-.card8:hover,
+.card4:hover,
+.card6:hover,
 .card9:hover {
     background-position: top center;
 }
+.card1:hover,
 .card2:hover,
-.card4:hover,
-.card6:hover,
+.card5:hover,
+.card7:hover,
+.card8:hover,
 .card10:hover {
     background-position: center center;
 }
