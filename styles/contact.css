@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'Hey August';
+    src: url(../fonts/Hey\ August.ttf) format(truetype);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --green-color: #008348;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-family: 'Hey August', sans-serif;
+    font-size: 4rem;
+    font-weight: 200;
+    color: var(--green-color);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/************************************* NAVBAR *********************************/
+header {
+    width: 100%;
+    height: 7rem;
+    background-color: var(--green-color);
+    user-select: none;
+    display: inline-flex;
+    box-shadow: inset 0px -1px 0px #000;
+    font-family: 'Hey August', sans-serif;
+}
+
+.logo {
+    width: 7rem;
+    margin-left: 1.5rem;
+    cursor: pointer;
+}
+
+.menu-container {
+    width: 100%;
+    line-height: 7rem;
+    text-align: center;
+}
+.home-item {
+    line-height: 7rem;
+}
+.home-item,
+.menu-item {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #f1f1f1;
+    margin: 0 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+.home-item:hover,
+.menu-item:hover {
+    color: #000;
+}
+
+.btn-menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 950px) {
+    .home-item,
+    .menu-item {
+        font-size: 1.8rem;
+    }
+}
+
+/*************************************************** MAIN CONTENT ****************************************/
+
+.container {
+    display: block;
+    margin: 2rem auto;
+}
+
+/******* Section address ******/
+
+.section-address {
+    width: 90%;
+    margin: 0 auto 4rem;
+}
+.content-address {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+}
+.content-address .address {
+    font-size: 2rem;
+}
+.content-address .address .phone,
+.content-address .address .mail {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+.content-address .address .phone .fa-phone, 
+.content-address .address .mail .fa-at {
+    font-size: 3rem;
+    margin-right: 2rem;
+    color: var(--green-color);
+}
+.content-address .address .phone a,
+.content-address .address .mail a {
+    font-style: italic;
+    text-decoration: none;
+    color: #000;
+}
+
+.content-address > iframe {
+    width: 50rem;
+    height: 35rem;
+    border: 2px solid var(--green-color);
+    border-radius: 5px;
+}
+
+/****** Section social ********/
+
+.section-social {
+    width: 90%;
+    margin: 0 auto 4rem;
+}
+.content-social {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.content-social .facebook,
+.content-social .instagram,
+.content-social .linkedin,
+.content-social .youtube {
+    width: 8.5rem;
+    fill: var(--green-color);
+}
+
+
+
+/*********************** RESPONSIVE ********************************/
+@media screen and (max-width: 767px) {
+
+    /******************** NAVBAR ***********************/
+
+    header {
+        position: relative;
+    }
+    .logo {
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 0;
+    }
+    .home-item {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2.3rem;
+    }
+    .menu-container {
+        width: 100%;
+        position: absolute;
+        display: none;
+        background-color: rgba(0, 131, 72, 0.576);
+        top: 7rem;
+        font-size: 1.7rem;
+        line-height: unset;
+        padding: 2rem;
+        text-transform: uppercase;
+        border-bottom: 1px solid #000;
+        transform: translateY(-100%);
+        font-weight: bolder;
+        z-index: 9999;
+    }
+    .open {
+        transform: translateY(0%);
+        display: block;
+        transition: transform 0.3s ease-out;
+    } 
+    .menu-item {
+        margin: 1rem auto;
+        display: block;
+        width: fit-content;
+
+    }
+
+    .btn-menu-toggle {
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        position: absolute;
+        right: 2rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .lines {
+        width: 100%;
+        height: 2px;
+        border-radius: 5px;
+        background-color: #f1f1f1;
+        position: absolute;
+        transition: all 0.3s ease-in-out;
+    }
+    .lines:nth-child(1) {
+        top: 0px;
+    }
+    .lines:nth-child(2) {
+        top: 12px;
+    }
+    .lines:nth-child(3) {
+        top: 24px;
+    }
+    .btn-menu-toggle.active .lines:nth-child(1) {
+        top: 9px;
+        transform: rotate(135deg);
+    }
+    
+    .btn-menu-toggle.active .lines:nth-child(3) {
+        top: 9px;
+        transform: rotate(-135deg);
+    }
+    .btn-menu-toggle.active .lines:nth-child(2) {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+}

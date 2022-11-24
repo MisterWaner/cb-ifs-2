@@ -8,6 +8,7 @@ logo.addEventListener('click', () => {
 //Button menu
 const btnMenu = document.querySelector('.btn-menu-toggle');
 const menuContainer = document.querySelector('.menu-container');
+const items2 = document.querySelectorAll('.menu-item');
 
 btnMenu.addEventListener('click', toggleMenu);
 
@@ -20,13 +21,13 @@ function toggleMenu() {
   menuContainer.classList.toggle("open");
 }
 
-new ResizeObserver(entries => {
-    if(entries[0].contentRect.width <= 767){
-      menuContainer.style.transition = "transform 0.3s ease-out"
-    } else {
-      menuContainer.style.transition = "none"
-    }
-}).observe(document.body);
+items2.forEach(item => {
+    item.addEventListener('click', () => {
+        menuContainer.classList.toggle('open');
+    });
+});
+
+
   
 //Sroll animation
 const sections = [...document.querySelectorAll('.container')];

@@ -22,7 +22,7 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-    background-color: #249446;
+    background-color: #008348;
 }
 
 .split {
@@ -62,12 +62,12 @@ h2 {
     padding: 1.5rem;
 }
 .split.home .btn:hover{
-    background-color: #249446;
-    border-color: #249446;
+    background-color: #008348;
+    border-color: #008348;
 }
 .split.shop .btn:hover{
-    background-color: #249446;
-    border-color: #249446;
+    background-color: #008348;
+    border-color: #008348;
 }
 
 .split.home {
@@ -82,7 +82,7 @@ h2 {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(36, 148, 70, 0.65);
+    background-color: rgba(0, 131, 72, 0.65);
 }
 
 .split.shop {

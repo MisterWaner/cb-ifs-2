@@ -35,6 +35,7 @@ header {
     user-select: none;
     display: inline-flex;
     box-shadow: inset 0px -1px 0px #000;
+    font-family: 'Hey August', sans-serif;
 }
 
 .logo {
@@ -85,10 +86,9 @@ header {
     text-align: center;
     letter-spacing: 0.3rem;
     font-size: 4rem;
-    background-image: linear-gradient(to right, #000, #249446);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    color: #008348;
+    font-family: 'Hey August', sans-serif;
+    font-weight: 100;
 }
 
 .container1 {
@@ -301,8 +301,10 @@ h3, .stat {
         transition: transform 0.3s ease-out;
     } 
     .menu-item {
-        margin: 1rem 0;
+        margin: 1rem auto;
         display: block;
+        width: fit-content;
+
     }
 
     .btn-menu-toggle {
