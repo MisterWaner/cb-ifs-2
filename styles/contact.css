@@ -125,6 +125,10 @@ header {
     text-decoration: none;
     color: #000;
 }
+.content-address .address .phone a:hover,
+.content-address .address .mail a:hover {
+    color: var(--green-color);
+}
 
 .content-address > iframe {
     width: 50rem;
@@ -152,6 +156,87 @@ header {
 .content-social .youtube {
     width: 8.5rem;
     fill: var(--green-color);
+}
+
+/******* Section Contact ******/
+
+.section-contact {
+    width: 90%;
+    margin: 0 auto 4rem;
+}
+.content-contact {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.inputs label,
+.message-contact label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 0px;
+}
+.inputs input,
+.message-contact input {
+    height: 2.5rem;
+    font-size: 1.5rem;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid var(--green-color);
+    outline-color: var(--green-color);
+}
+hr {
+    width: 20rem;
+    margin: 3.5rem auto;
+    border: 2px solid var(--green-color);
+    border-radius: 10px;
+}
+.message-contact {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.message-contact select {
+    margin-top: 1.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    outline-color: var(--green-color);
+}
+.message-contact textarea {
+    outline-color: var(--green-color);
+    border: 1px solid var(--green-color);
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+.buttons {
+    margin-top: 2rem;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.buttons a {
+    text-decoration: none;
+    color: #000;
+    margin-right: 3rem;
+}
+.buttons a,
+.buttons .btn {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 1px solid var(--green-color);
+    cursor: pointer;
+    border-radius: 5px;
+}
+.buttons a:hover,
+.buttons .btn:hover {
+    background-color: var(--green-color);
+    color: #f1f1f1;
 }
 
 
@@ -248,5 +333,35 @@ header {
     .btn-menu-toggle.active .lines:nth-child(2) {
         opacity: 0;
         transform: translateX(20px);
+    }
+
+    /****** Main content *******/
+
+    h2 {
+        font-size: 2.5rem;
+    }
+    .content-address {
+        flex-direction: column-reverse;
+    }
+    .content-address .address {
+        font-size: 1.7rem;
+        margin-top: 2rem;
+    }
+    .content-social .facebook,
+    .content-social .instagram,
+    .content-social .linkedin,
+    .content-social .youtube {
+        width: 5rem;
+    }
+    .inputs,
+    .message-contact,
+    .buttons {
+        width: 70%;
+    }
+    .message-contact select {
+        margin-top: 1.8rem;
+    }
+    .buttons a {
+        margin-right: 2.2rem;
     }
 }
