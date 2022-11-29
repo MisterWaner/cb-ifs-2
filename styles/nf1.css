@@ -26,50 +26,6 @@ body {
     overflow-x: hidden;
 }
 
-
-/************************************* NAVBAR *********************************/
-header {
-    width: 100%;
-    height: 7rem;
-    background-color: var(--green-color);
-    user-select: none;
-    display: inline-flex;
-    box-shadow: inset 0px -1px 0px #000;
-    font-family: 'Hey August', sans-serif;
-}
-
-.logo {
-    width: 7rem;
-    margin-left: 1.5rem;
-    cursor: pointer;
-}
-
-.menu-container {
-    width: 100%;
-    line-height: 7rem;
-    text-align: center;
-}
-.home-item {
-    line-height: 7rem;
-}
-.home-item,
-.menu-item {
-    font-size: 2.5rem;
-    text-decoration: none;
-    color: #f1f1f1;
-    margin: 0 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.3rem;
-}
-.home-item:hover,
-.menu-item:hover {
-    color: #000;
-}
-
-.btn-menu-toggle {
-    display: none;
-}
-
 /*********************************************** MAIN CONTENT ******************************************/
 .container {
     max-width: 1250px;
@@ -255,118 +211,21 @@ h3, .stat {
     opacity: 1;
 }
 
-@media screen and (max-width: 950px) {
-    .home-item,
-    .menu-item {
-        font-size: 1.8rem;
-    }
-}
+/***************************** RESPONSIVE *********************************/
+
 @media screen and (max-width: 767px) {
-    /******************** NAVBAR ***********************/
-    header {
-        position: relative;
-    }
-    .logo {
-        position: absolute;
-        left: 1rem;
-        top: 50%;
-        transform: translateY(-50%);
-        margin-left: 0;
-    }
-    .home-item {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 2.3rem;
-    }
-    .menu-container {
-        width: 100%;
-        position: absolute;
-        display: none;
-        background-color: rgba(0, 131, 72, 0.576);
-        top: 7rem;
-        font-size: 1.7rem;
-        line-height: unset;
-        padding: 2rem;
-        text-transform: uppercase;
-        border-bottom: 1px solid #000;
-        transform: translateY(-100%);
-        font-weight: bolder;
-        z-index: 9999;
-    }
-    .open {
-        transform: translateY(0%);
-        display: block;
-        transition: transform 0.3s ease-out;
-    } 
-    .menu-item {
-        margin: 1rem auto;
-        display: block;
-        width: fit-content;
-
-    }
-
-    .btn-menu-toggle {
-        width: 26px;
-        height: 26px;
-        cursor: pointer;
-        border: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: transparent;
-        position: absolute;
-        right: 2rem;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    .lines {
-        width: 100%;
-        height: 2px;
-        border-radius: 5px;
-        background-color: #f1f1f1;
-        position: absolute;
-        transition: all 0.3s ease-in-out;
-    }
-    .lines:nth-child(1) {
-        top: 0px;
-    }
-    .lines:nth-child(2) {
-        top: 12px;
-    }
-    .lines:nth-child(3) {
-        top: 24px;
-    }
-    .btn-menu-toggle.active .lines:nth-child(1) {
-        top: 9px;
-        transform: rotate(135deg);
-    }
-    
-    .btn-menu-toggle.active .lines:nth-child(3) {
-        top: 9px;
-        transform: rotate(-135deg);
-    }
-    .btn-menu-toggle.active .lines:nth-child(2) {
-        opacity: 0;
-        transform: translateX(20px);
-    }
-
     .container1 {
         display: flex;
         flex-direction: column;
     } 
-
     .content1 {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-
     #btn-to-top {
         font-size: 4rem;
         bottom: 1rem;
         right: 1rem;
         color: var(--green-color);
     }
-    
 }
