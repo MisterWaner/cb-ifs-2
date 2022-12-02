@@ -29,13 +29,12 @@ body {
 /*********************************************** MAIN CONTENT ******************************************/
 .container {
     max-width: 1250px;
-    height: 900px;
+    height: auto;
 }
 @media screen and(max-width: 1150px) {
     .container {
         max-width: 1000px;
     }
-
 }
 
 .container h2 {
@@ -45,6 +44,7 @@ body {
     color: #008348;
     font-family: 'Hey August', sans-serif;
     font-weight: 100;
+    margin-top: 3rem;
 }
 
 .container1 {
@@ -160,11 +160,11 @@ h3, .stat {
     background: url('../ressources/images/coumba.jpg') center center no-repeat; 
     background-size: 42rem;
 }
-.card10 {
+/* .card10 {
     background: url('../ressources/images/evan-fournier.jpg') center center no-repeat; 
     background-size: 42rem;
     
-}
+} */
 
 .card1:hover,
 .card2:hover,
@@ -209,6 +209,40 @@ h3, .stat {
 }
 #btn-to-top.show {
     opacity: 1;
+}
+
+
+/****** id match ******/
+.container2,
+.container3 {
+    margin: 0 auto 1rem;
+
+}
+.content2,
+.content3 {
+    width: 100%;
+    padding-bottom: 2rem;
+}
+.matchs,
+.rank {
+    display: block;
+    width: 90%;
+    margin: 3rem auto 1rem;
+    height: 50rem;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px var(--green-color);
+}
+.content2 a {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    color: var(--green-color);
+    font-weight: bold;
+}
+.content2 a:visited {
+    color: #808080;
 }
 
 /***************************** RESPONSIVE *********************************/
