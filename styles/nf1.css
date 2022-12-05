@@ -28,15 +28,10 @@ body {
 
 /*********************************************** MAIN CONTENT ******************************************/
 .container {
-    max-width: 1250px;
+    width: 90%;
     height: auto;
+    margin: 3rem auto;
 }
-@media screen and(max-width: 1150px) {
-    .container {
-        max-width: 1000px;
-    }
-}
-
 .container h2 {
     text-align: center;
     letter-spacing: 0.3rem;
@@ -44,23 +39,12 @@ body {
     color: #008348;
     font-family: 'Hey August', sans-serif;
     font-weight: 100;
-    margin-top: 3rem;
+    user-select: none;
 }
-
-.container1 {
-    height: auto;
-    margin: 2rem auto;
-}
-
 .content1 {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 2fr);
-}
-@media screen and (max-width: 1150px) {
-    .content1 {
-        display: grid;
-        grid-template-columns: repeat(2, 2fr);
-    }
 }
 
 .card {
@@ -160,11 +144,6 @@ h3, .stat {
     background: url('../ressources/images/coumba.jpg') center center no-repeat; 
     background-size: 42rem;
 }
-/* .card10 {
-    background: url('../ressources/images/evan-fournier.jpg') center center no-repeat; 
-    background-size: 42rem;
-    
-} */
 
 .card1:hover,
 .card2:hover,
@@ -215,7 +194,7 @@ h3, .stat {
 /****** id match ******/
 .container2,
 .container3 {
-    margin: 0 auto 1rem;
+    padding-top: 3rem;
 
 }
 .content2,
@@ -247,19 +226,94 @@ h3, .stat {
 
 /***************************** RESPONSIVE *********************************/
 
+@media screen and (max-width: 1150px) {
+    .content1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .card {
+        width: 27.5rem;
+        height: 37.5rem;
+    }
+    .border {
+        width: 26.5rem;
+        height: 36.5rem
+    }
+}
+@media screen and (max-width: 1050px) {
+    .card {
+        width: 25rem;
+        height: 35rem;
+    }
+    .border {
+        width: 24rem;
+        height: 34rem
+    }
+}
+@media screen and (max-width: 950px) {
+    .content1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card {
+        width: 30rem;
+        height: 40rem;
+    }
+    .border {
+        width: 29rem;
+        height: 39rem
+    }
+}
 @media screen and (max-width: 767px) {
     .container1 {
         display: flex;
         flex-direction: column;
     } 
-    .content1 {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+    .card {
+        width: 25rem;
+        height: 35rem;
+    }
+    .border { 
+        height: 34rem;
+        width: 24rem;
     }
     #btn-to-top {
         font-size: 4rem;
         bottom: 1rem;
         right: 1rem;
         color: var(--green-color);
+    }
+}
+@media screen and (max-width: 650px) {
+    .card {
+        width: 22.5rem;
+        height: 32.5rem;
+    }
+    .border { 
+        height: 31.5rem;
+        width: 21.5rem;
+    }
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5,
+    .card6,
+    .card7,
+    .card8,
+    .card9 {
+        background-size: 32.5rem;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 575px){
+    .content1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card {
+        width: 25rem;
+        height: 35rem;
+    }
+    .border {
+        width: 24rem;
+        height: 34rem
     }
 }
