@@ -84,13 +84,23 @@ h2 {
 }
 
 /********** GRID ***********/
-.grid-container {
+.grids-container {
     width: 100%;
     margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.grid-premium-partners,
+.grid-important-partners,
+.grid-officials-partners {
     display: grid;
-    text-align: center;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+}
+.grid-important-partners,
+.grid-officials-partners {
+    margin-top: 4rem;
 }
 .img-grid {
     width: 27.5rem;
@@ -102,7 +112,6 @@ h2 {
     transform: scale(1.1);
     transition: all 0.2s ease;
 }
-
 
 #btn-to-top {
     font-size: 6rem;
@@ -140,7 +149,9 @@ h2 {
     }
 }
 @media screen and (max-width: 950px) {
-    .grid-container {
+    .grid-premium-partners,
+    .grid-important-partners,
+    .grid-officials-partners {
         grid-template-columns: repeat(3, 1fr);
     }
     .marquee-text {
@@ -151,7 +162,9 @@ h2 {
     .marquee-text {
         font-size: 1.8rem;
     }
-    .grid-container {
+    .grid-premium-partners,
+    .grid-important-partners,
+    .grid-officials-partners {
         grid-template-columns: repeat(2, 1fr);
     }
     #btn-to-top {
