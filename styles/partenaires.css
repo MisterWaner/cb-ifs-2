@@ -112,7 +112,14 @@ h2 {
     transform: scale(1.1);
     transition: all 0.2s ease;
 }
-
+.separator {
+    display: block;
+    margin-top: 4rem;
+    height: 2px;
+    width: 25%;
+    background-color: var(--green-color);
+    border-radius: 5px;
+}
 #btn-to-top {
     font-size: 6rem;
     color: var(--green-color);
@@ -129,6 +136,56 @@ h2 {
 #btn-to-top.show {
     opacity: 1;
 }
+
+/********* CONTACT SECTION ***********/
+
+.be-a-partner-container {
+    margin-top: 2rem;
+}
+.contact-txt {
+    font-size: 1.8rem;
+    text-align: center;
+}
+.contact-us {
+    display: flex;
+    margin: 2rem auto;
+    width: 40rem;
+    justify-content: space-around;
+}
+.mail,
+.phone {
+    width: 100%;
+    background-color: var(--green-color);
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.mail:hover,
+.phone:hover {
+    background-color: #f1f1f1;
+    border: 1px solid var(--green-color);
+}
+.mail:hover a,
+.phone:hover a {
+    color: var(--green-color);
+    font-weight: bold;
+}
+.mail {
+    margin-right: 1.5rem;
+}
+.phone {
+    margin-left: 1.5rem;
+}
+.mail > a,
+.phone > a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
 /*********************** RESPONSIVE ********************************/
 @media screen and (max-width: 1300px) {
     .img-grid {
@@ -159,6 +216,9 @@ h2 {
     }
 }
 @media screen and (max-width: 767px) {
+    h2 {
+        font-size: 2.5rem;
+    }
     .marquee-text {
         font-size: 1.8rem;
     }
@@ -166,6 +226,16 @@ h2 {
     .grid-important-partners,
     .grid-officials-partners {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-us {
+        width: 35rem;
+    }
+    .mail, .phone {
+        font-size: 1.5rem;
+        padding: 1rem 1.5rem;
+    }
+    .contact-txt {
+        font-size: 1.5rem;
     }
     #btn-to-top {
         font-size: 4rem;
