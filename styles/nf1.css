@@ -44,7 +44,7 @@ body {
 .content1 {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
+    grid-template-columns: repeat(3, 33%);
 }
 
 .card {
@@ -227,10 +227,6 @@ h3, .stat {
 /***************************** RESPONSIVE *********************************/
 
 @media screen and (max-width: 1150px) {
-    .content1 {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
     .card {
         width: 27.5rem;
         height: 37.5rem;
@@ -252,7 +248,7 @@ h3, .stat {
 }
 @media screen and (max-width: 950px) {
     .content1 {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 50%);
     }
     .card {
         width: 30rem;
@@ -267,10 +263,6 @@ h3, .stat {
     .container h2 {
         font-size: 2.5rem;
     }
-    .container1 {
-        display: flex;
-        flex-direction: column;
-    } 
     .card {
         width: 25rem;
         height: 35rem;
@@ -309,7 +301,7 @@ h3, .stat {
 }
 @media screen and (min-width: 320px) and (max-width: 575px){
     .content1 {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 100%);
     }
     .card {
         width: 25rem;

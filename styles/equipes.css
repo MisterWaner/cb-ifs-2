@@ -49,7 +49,61 @@ h2 {
     width: 100%;
     display: grid;
     margin: 3rem auto;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 33%);
+    gap: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--green-color);
+    border-radius: 5px;
+    align-items: center;
+}
+.card-title {
+    display: block;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+.card-body {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+}
+.card-img {
+    width: 90%;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+.card-txt {
+    display: block;
+    text-align: center;
+    margin: 2rem;
+    font-size: 1.5rem;
+}
+.show-more {
+    font-size: 1.5rem;
+    display: block;
+    width: 50%;
+    text-align: center;
+    margin: 1.5rem auto;
+    border: none;
+    cursor: pointer;
+    background-color: var(--green-color);
+    padding: 0.8rem 0.5rem;
+    border-radius: 5px;
+    color: #f1f1f1;
+}
+.show-more:hover {
+    background-color: #f1f1f1;
+    color: var(--green-color);
+    border: 1px solid var(--green-color);
+    font-weight: bold;
 }
 
 #btn-to-top {
@@ -70,15 +124,31 @@ h2 {
 }
 
 /***************************** RESPONSIVE *********************************/
-
+@media screen and (max-width: 900px) {
+    .girls-container,
+    .boys-container,
+    .minimoys-container {
+        grid-template-columns: repeat(2, 50%);
+    }
+}
 @media screen and (max-width: 767px) {
     h2 {
         font-size: 2.5rem;
+    }
+    .card-title {
+        font-size: 1.7rem;
     }
     #btn-to-top {
         font-size: 4rem;
         bottom: 1rem;
         right: 1rem;
         color: var(--green-color);
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 500px) {
+    .girls-container,
+    .boys-container,
+    .minimoys-container {
+        grid-template-columns: repeat(1, 100%);
     }
 }

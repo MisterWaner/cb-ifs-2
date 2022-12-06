@@ -95,7 +95,7 @@ h2 {
 .grid-important-partners,
 .grid-officials-partners {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 25%);
     gap: 2rem;
 }
 .grid-important-partners,
@@ -103,7 +103,7 @@ h2 {
     margin-top: 4rem;
 }
 .img-grid {
-    width: 27.5rem;
+    width: 95%;
     border-radius: 1rem;
     box-shadow: 3px 3px 10px var(--green-color);
     background-color: #fff;
@@ -187,29 +187,17 @@ h2 {
 }
 
 /*********************** RESPONSIVE ********************************/
-@media screen and (max-width: 1300px) {
-    .img-grid {
-        width: 25rem;
-    }
-}
+
 @media screen and (max-width: 1160px) {
-    .img-grid {
-        width: 22.5rem;
-    }
     .marquee-text {
         font-size: 3rem;
-    }
-}
-@media screen and (max-width: 1050px) {
-    .img-grid {
-        width: 20rem;
     }
 }
 @media screen and (max-width: 950px) {
     .grid-premium-partners,
     .grid-important-partners,
     .grid-officials-partners {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 33%);
     }
     .marquee-text {
         font-size: 2.3rem;
@@ -225,7 +213,7 @@ h2 {
     .grid-premium-partners,
     .grid-important-partners,
     .grid-officials-partners {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 50%);
     }
     .contact-us {
         width: 35rem;
@@ -250,9 +238,6 @@ h2 {
     }
 }
 @media screen and (min-width: 320px) and (max-width: 500px) {
-    .img-grid {
-        width: 15rem;
-    }
     .marquee-text {
         font-size: 1.1rem;
     }
