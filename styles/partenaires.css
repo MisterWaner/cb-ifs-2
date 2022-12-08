@@ -29,7 +29,7 @@ body {
 /*********************************** MAIN CONTENT **********************************/
 
 .container {
-    width: 90%;
+    width: 85%;
     margin: 2rem auto 0;
     display: flex;
     flex-direction: column;
@@ -42,30 +42,37 @@ h2 {
     text-transform: uppercase;
     color: var(--green-color);
 }
+h3 {
+    font-family: 'Hey August', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: var(--green-color);
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+h3:nth-child(2),
+h3:nth-child(3) {
+    margin-top: 3rem;
+}
 
 /********* MARQUEE *********/
 
 .bandeau {
-    margin-top: 5rem;
+    margin-top: 3rem;
     text-align: center;
     border-radius: 1rem;
     box-shadow: 3px 3px 10px var(--green-color);
 }
-.marquee-container {
+.thanks-container {
     margin-top: 5rem;
-    min-width: 100%;
-    display: flex;
+    width: 100%;
+    text-align: center;
     overflow: hidden;
     background-color: #f1f1f1;
 }
-.marquee {
-    width: 100%;
-    animation: scroll-x 8s linear infinite;
-}
-.marquee:hover {
-    animation-play-state: paused;
-}
-.marquee-text {
+.thanks-text {
     font-size: 4rem;
     text-transform: uppercase;
     font-family: 'Hey August', sans-serif;
@@ -74,51 +81,41 @@ h2 {
     letter-spacing: 3px;
 }
 
-@keyframes scroll-x {
-    from {
-        transform: translateX(100%);
-      }
-      to {
-        transform: translateX(-100%);
-      }
-}
-
 /********** GRID ***********/
 .grids-container {
     width: 100%;
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 4rem;
 }
 .grid-premium-partners,
 .grid-important-partners,
 .grid-officials-partners {
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(4, 23.5%);
     gap: 2rem;
+    text-align: center;
 }
 .grid-important-partners,
 .grid-officials-partners {
-    margin-top: 4rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+.grid-premium-partners > a,
+.grid-important-partners > a,
+.grid-officials-partners > a {
+    display: block;
+    text-align: center;
 }
 .img-grid {
-    width: 95%;
+    width: 100%;
     border-radius: 1rem;
     box-shadow: 3px 3px 10px var(--green-color);
     background-color: #fff;
+    height: 27.5rem;
+    object-fit: contain;
 }
 .img-grid:hover {
     transform: scale(1.1);
     transition: all 0.2s ease;
-}
-.separator {
-    display: block;
-    margin-top: 4rem;
-    height: 2px;
-    width: 25%;
-    background-color: var(--green-color);
-    border-radius: 5px;
 }
 #btn-to-top {
     font-size: 6rem;
@@ -189,7 +186,7 @@ h2 {
 /*********************** RESPONSIVE ********************************/
 
 @media screen and (max-width: 1160px) {
-    .marquee-text {
+    .thanks-text {
         font-size: 3rem;
     }
 }
@@ -199,7 +196,7 @@ h2 {
     .grid-officials-partners {
         grid-template-columns: repeat(3, 33%);
     }
-    .marquee-text {
+    .thanks-text {
         font-size: 2.3rem;
     }
 }
@@ -207,7 +204,7 @@ h2 {
     h2 {
         font-size: 2.5rem;
     }
-    .marquee-text {
+    .thanks-text {
         font-size: 1.8rem;
     }
     .grid-premium-partners,
@@ -233,12 +230,12 @@ h2 {
     }
 }
 @media screen and (max-width: 615px) {
-    .marquee-text {
+    .thanks-text {
         font-size: 1.3rem;
     }
 }
 @media screen and (min-width: 320px) and (max-width: 500px) {
-    .marquee-text {
+    .thanks-text {
         font-size: 1.1rem;
     }
 }

@@ -13,6 +13,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --green-color: #008348;
+}
 
 html {
   font-size: 62.5%;
@@ -21,20 +24,20 @@ html {
 body {
   height: 100vh;
   font-family: 'Roboto', sans-serif;
-  background: #f1f1f1;
+  background: #fff;
   overflow-x: hidden;
+  user-select: none;
 }
 
 .container {
   width: 100%;
   height: 100%;
+  display: flex;
 }
-
 .panel-wrapper {
   display: flex;
   flex-wrap: wrap;
 }
-
 .panel {
   display: flex;
   flex-wrap: wrap;
@@ -55,7 +58,6 @@ body {
 .panel:nth-child(6) {
   background-size: contain;
 }
-
 .panel-inner {
   background-repeat: no-repeat;
   background-position: center center;
@@ -66,22 +68,32 @@ body {
   position: relative;
   z-index: 3;
 }
-
-h3 {
-  background-color: rgba(0, 133, 73, 0.9);
-  color: #f1f1f1;
-  width: 100%;
+.panel-title {
+  display: grid;
+  grid-template-columns: 1fr 11fr;
   height: 100%;
-  position: relative;
+  background-color: rgba(0, 133, 73, 0.9);
+}
+.panel-title img {
+  width: 0;
+  opacity: 0;
+  text-align: center;
+  transition: all 0.5s ease-in;
+}
+.panel:hover .panel-title > img {
+  opacity: 1;
+  width: 8rem;
+}
+h3 {
+  color: #f1f1f1;
   cursor: pointer;
   font-family: 'Hey August', sans-serif;
   font-size: 4rem;
   font-weight: 200;
-  text-align: center;
   line-height: 12.5vh;
+  text-align: center;
   text-transform: capitalize;
 }
-
 .about {
  display: flex;
  flex-direction: column;
@@ -91,9 +103,7 @@ h3 {
  transform: translate(-50%, -50%);
  height: 100%;
  width: 90%;
- 
 }
-
 .list-container {
   list-style-type: none;
   display: flex;
@@ -112,7 +122,6 @@ h3 {
   font-weight: bold;
   text-transform: uppercase;
 }
-
 .about-text {
   font-size: 1.7rem;
   position: relative;
@@ -127,7 +136,6 @@ h3 {
   opacity: 0;
   transition: opacity 0.7s ease-in;
 }
-
 .btn {
   position: absolute;
   bottom: 1.5rem;
@@ -145,22 +153,19 @@ h3 {
   padding: 1rem 1.5rem;
   transition: opacity 0.7s ease-in;
 }
-
 .panel:hover {
   height: 60vh;
 }
-
 .panel:hover .btn,
 .panel:hover .about-text,
 .panel:hover .list-container {
   opacity: 1;
 }
-
 .btn:hover {
   background-color: #f1f1f1;
   color: #008348;
 }
-
+/******************************* RESPONSIVE *****************************/
 @media screen and (max-width: 1200px) {
   .list-container {
     font-size: 1.5rem;
@@ -175,6 +180,11 @@ h3 {
     font-size: 1.5rem;
   }
 }
+@media screen and (max-width: 975px) {
+  .panel-title {
+    grid-template-columns: 3fr 9fr;
+  }
+}
 @media screen and (max-width: 900px) {
   .list-container {
     font-size: 1.3rem;
@@ -185,18 +195,20 @@ h3 {
   .list-item {
     margin: 1.5rem 0rem;
   }
-
   .btn {
     font-size: 1.2rem;
     font-weight: bold;
     padding: 0.8rem 1.1rem;
   }
-
   .about-text {
     font-size: 1.3rem;
   }
 }
-
+@media screen and (max-width: 625px){
+  h3 {
+    font-size: 3.25rem;
+  }
+}
 @media screen and (min-width:320px) and (max-width: 575px) {
   h3 {
     font-size: 2.5rem;
