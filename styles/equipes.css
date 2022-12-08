@@ -105,6 +105,38 @@ h2 {
     border: 1px solid var(--green-color);
     font-weight: bold;
 }
+/******* MODAL *********/
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 0 2rem;
+    background-color: rgba(0, 131, 72, 0.8);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+.modal.active {
+    opacity: 1;
+    z-index: 9999;
+}
+.modal-body {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+}
+.modal-img,
+.modal-iframe {
+    width: 90%;
+    border-radius: 5px;
+}
+.modal-iframe {
+    border: none;
+    height: 30rem;
+}
 
 #btn-to-top {
     font-size: 6rem;
