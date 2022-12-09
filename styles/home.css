@@ -56,7 +56,7 @@ body {
   background-position: top center;
 } 
 .panel:nth-child(6) {
-  background-size: contain;
+  background-size: cover;
 }
 .panel-inner {
   background-repeat: no-repeat;
@@ -84,7 +84,7 @@ body {
 .panel-title4,
 .panel-title6,
 .panel-title8 {
-  background-color: rgba(241, 241, 241, 0.9);
+  background-color: rgba(241, 241, 241, 0.75);
 }
 .panel-title2 h3,
 .panel-title4 h3,
