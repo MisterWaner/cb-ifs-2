@@ -57,6 +57,11 @@ h2 {
 .content-address .address {
     font-size: 2rem;
 }
+.content-address .address span {
+    color: var(--green-color);
+    text-transform: uppercase;
+    font-family: 'Hey August', sans-serif;
+}
 .content-address .address .phone,
 .content-address .address .mail {
     margin-top: 2rem;

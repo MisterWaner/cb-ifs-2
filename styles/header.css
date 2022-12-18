@@ -59,16 +59,22 @@ header {
     display: none;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     .home-item,
     .menu-item {
         font-size: 1.8rem;
     }
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 950px) {
     .home-item,
     .menu-item {
         font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 850px) {
+    .home-item,
+    .menu-item {
+        font-size: 1.2rem;
     }
 }
 @media screen and (max-width: 767px) {
@@ -95,7 +101,6 @@ header {
         display: none;
         background-color: rgba(0, 131, 72, 0.576);
         top: 7rem;
-        font-size: 1.7rem;
         line-height: unset;
         padding: 2rem;
         text-transform: uppercase;
@@ -113,7 +118,7 @@ header {
         margin: 1rem auto;
         display: block;
         width: fit-content;
-
+        font-size: 1.7rem;
     }
     .btn-menu-toggle {
         width: 26px;

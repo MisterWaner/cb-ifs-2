@@ -150,7 +150,7 @@ h2 {
 .modal-body {
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 90%;
     margin: auto;
     align-items: center;
 }
@@ -161,7 +161,7 @@ h2 {
 }
 .modal-img,
 .modal-iframe {
-    width: 90%;
+    width: 100%;
     border-radius: 5px;
     margin: 25px 0;
 }
