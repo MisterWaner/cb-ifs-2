@@ -107,41 +107,41 @@ h3, .stat {
 }
 
 .card1 {
-    background: url('../ressources/images/ju2.jpg') center center no-repeat;
+    background: url('../../ressources/images/ju2.jpg') center center no-repeat;
     background-size: 42rem;
 }
 .card2 {
-    background: url('../ressources/images/ax.jpg') center center no-repeat; 
+    background: url('../../ressources/images/ax.jpg') center center no-repeat; 
     background-size: 42rem;
     
 }
 .card3 {
-    background: url('../ressources/images/marou.jpg') top center no-repeat; 
+    background: url('../../ressources/images/marou.jpg') top center no-repeat; 
     background-size: 42rem;
 }
 .card4 {
-    background: url('../ressources/images/carla3.jpg') top center no-repeat; 
+    background: url('../../ressources/images/carla3.jpg') top center no-repeat; 
     background-size: 42rem;
 }
 .card5 {
-    background: url('../ressources/images/florine.jpg') center center no-repeat; 
+    background: url('../../ressources/images/florine.jpg') center center no-repeat; 
     background-size: 42rem;
 }
 .card6 {
-    background: url('../ressources/images/fayzat2.jpg') top center no-repeat; 
+    background: url('../../ressources/images/fayzat2.jpg') top center no-repeat; 
     background-size: 42rem;
 }
 .card7 {
-    background: url('../ressources/images/kendall.jpg') center center no-repeat; 
+    background: url('../../ressources/images/kendall.jpg') center center no-repeat; 
     background-size: 42rem;
 }
 .card8 {
-    background: url('../ressources/images/lucile.jpg') center center no-repeat; 
+    background: url('../../ressources/images/lucile.jpg') center center no-repeat; 
     background-size: 42rem;
     
 }
 .card9 {
-    background: url('../ressources/images/coumba.jpg') center center no-repeat; 
+    background: url('../../ressources/images/coumba.jpg') center center no-repeat; 
     background-size: 42rem;
 }
 
