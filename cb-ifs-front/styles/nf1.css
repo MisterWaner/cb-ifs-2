@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
 @font-face {
-    font-family: 'Hey August';
-    src: url(../fonts/Hey\ August.ttf) format(truetype);
+    font-family: 'Heaters';
+    src: url(../fonts/Heaters.otf) format(opentype);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 *, ::before, ::after {
     box-sizing: border-box;
@@ -21,7 +21,7 @@ html {
 
 body {
     height: 100vh;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'League Gothic', sans-serif;
     background-color: #f1f1f1;
     overflow-x: hidden;
 }
@@ -35,10 +35,10 @@ body {
 .container h2 {
     text-align: center;
     letter-spacing: 0.3rem;
-    font-size: 4rem;
+    font-size: 5rem;
     color: #008348;
-    font-family: 'Hey August', sans-serif;
-    font-weight: 100;
+    font-family: 'Heaters', sans-serif;
+    font-weight: 400;
     user-select: none;
 }
 .content1 {

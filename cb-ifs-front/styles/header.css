@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Hey August';
-    src: url(../fonts/Hey\ August.ttf) format(truetype);
+    font-family: 'Heaters';
+    src: url(../fonts/Heaters.otf) format(opentype);
 }
 
 *, ::before, ::after {
@@ -24,7 +24,7 @@ header {
     user-select: none;
     display: inline-flex;
     box-shadow: inset 0px -1px 0px #000;
-    font-family: 'Hey August', sans-serif;
+    font-family: 'Heaters', sans-serif;
 }
 
 .logo {
@@ -43,10 +43,10 @@ header {
 }
 .home-item,
 .menu-item {
-    font-size: 2.5rem;
+    font-size: 4rem;
     text-decoration: none;
     color: #f1f1f1;
-    margin: 0 1rem;
+    margin: 0 25px;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
 }
