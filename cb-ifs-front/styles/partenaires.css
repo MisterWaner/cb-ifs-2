@@ -30,7 +30,7 @@ body {
 
 .container {
     width: 85%;
-    margin: 2rem auto 0;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
 }
@@ -48,25 +48,25 @@ h3 {
     text-transform: uppercase;
     color: var(--green-color);
     font-size: 5rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
 }
 h3:nth-child(2),
 h3:nth-child(3) {
-    margin-top: 3rem;
+    margin-top: 30px;
 }
 
 /********* MARQUEE *********/
 
 .bandeau {
-    margin-top: 3rem;
+    margin-top: 30px;
     text-align: center;
-    border-radius: 1rem;
+    border-radius: 10px;
     box-shadow: 3px 3px 10px var(--green-color);
 }
 .thanks-container {
-    margin-top: 5rem;
+    margin-top: 50px;
     width: 100%;
     text-align: center;
     overflow: hidden;
@@ -84,20 +84,20 @@ h3:nth-child(3) {
 /********** GRID ***********/
 .grids-container {
     width: 100%;
-    margin-top: 4rem;
+    margin: 40px auto;
 }
 .grid-premium-partners,
 .grid-important-partners,
 .grid-officials-partners {
     display: grid;
-    grid-template-columns: repeat(4, 23.5%);
-    gap: 2rem;
+    grid-template-columns: repeat(4, 22%);
+    gap: 20px;
     text-align: center;
 }
 .grid-important-partners,
 .grid-officials-partners {
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
 }
 .grid-premium-partners > a,
 .grid-important-partners > a,
@@ -107,10 +107,9 @@ h3:nth-child(3) {
 }
 .img-grid {
     width: 100%;
-    border-radius: 1rem;
+    border-radius: 10px;
     box-shadow: 3px 3px 10px var(--green-color);
     background-color: #fff;
-    height: 27.5rem;
     object-fit: contain;
 }
 .img-grid:hover {
@@ -121,8 +120,8 @@ h3:nth-child(3) {
     font-size: 6rem;
     color: var(--green-color);
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
+    bottom: 20px;
+    right: 20px;
     cursor: pointer;
     opacity: 0;
     transition: opacity 0.3s, color 0.5s;
@@ -137,7 +136,7 @@ h3:nth-child(3) {
 /********* CONTACT SECTION ***********/
 
 .be-a-partner-container {
-    margin-top: 2rem;
+    margin-top: 20px;
 }
 .contact-txt {
     font-size: 1.8rem;
@@ -145,15 +144,15 @@ h3:nth-child(3) {
 }
 .contact-us {
     display: flex;
-    margin: 2rem auto;
-    width: 40rem;
+    margin: 20px auto;
+    width: 400px;
     justify-content: space-around;
 }
 .mail,
 .phone {
     width: 100%;
     background-color: var(--green-color);
-    padding: 1.5rem 2rem;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -172,10 +171,10 @@ h3:nth-child(3) {
     font-weight: bold;
 }
 .mail {
-    margin-right: 1.5rem;
+    margin-right: 15px;
 }
 .phone {
-    margin-left: 1.5rem;
+    margin-left: 15px;
 }
 .mail > a,
 .phone > a {
@@ -194,7 +193,7 @@ h3:nth-child(3) {
     .grid-premium-partners,
     .grid-important-partners,
     .grid-officials-partners {
-        grid-template-columns: repeat(3, 33%);
+        grid-template-columns: repeat(3, 30%);
     }
     .thanks-text {
         font-size: 2.3rem;
@@ -210,22 +209,22 @@ h3:nth-child(3) {
     .grid-premium-partners,
     .grid-important-partners,
     .grid-officials-partners {
-        grid-template-columns: repeat(2, 50%);
+        grid-template-columns: repeat(2, 45%);
     }
     .contact-us {
-        width: 35rem;
+        width: 350px;
     }
     .mail, .phone {
         font-size: 1.5rem;
-        padding: 1rem 1.5rem;
+        padding: 10px 15px;
     }
     .contact-txt {
         font-size: 1.5rem;
     }
     #btn-to-top {
         font-size: 4rem;
-        bottom: 1rem;
-        right: 1rem;
+        bottom: 10px;
+        right: 10px;
         color: var(--green-color);
     }
 }
@@ -237,5 +236,9 @@ h3:nth-child(3) {
 @media screen and (min-width: 320px) and (max-width: 500px) {
     .thanks-text {
         font-size: 1.1rem;
+    }
+    .mail, .phone {
+        justify-content: space-around;
+        padding: 5px 7px;
     }
 }
