@@ -1,3 +1,4 @@
+//Resize header title
 window.addEventListener('resize', () => {
     let title = document.querySelector('.header-title');
 

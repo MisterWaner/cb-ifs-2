@@ -1,3 +1,15 @@
+//Resizing header title
+window.addEventListener('resize', () => {
+    let mini = document.querySelector('.mini-basket');
+
+    if (window.innerWidth < 1245) {
+        mini.textContent = 'mini-basket';
+    } else if (window.innerWidth > 1245) {
+        mini.textContent = 'école de mini-basket';
+    }
+})
+
+//Modals
 const openBtns = document.querySelectorAll('.show-more');
 const closeBtns = document.querySelectorAll('.close-btn');
 const body = document.querySelector('body');

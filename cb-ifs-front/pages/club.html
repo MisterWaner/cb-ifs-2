@@ -1,12 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Club</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="../styles/club.css">
+    <link rel="stylesheet" href="../styles/header.css">
 </head>
 <body>
-    
+    <header>
+        <img class="logo" src="../../ressources/logo/logo-ifs.png" alt="logo du club de basket d'Ifs">
+        <a href="./home.html" class="home-item">Accueil</a>
+        <nav class="menu-container">
+            <a class="menu-item histoire" href="#histoire">Histoire du club</a>
+            <a class="menu-item staff" href="#staff">Staff</a>
+            <a class="menu-item projets" href="#projets">Projets et actions</a>
+            <a class="menu-item infos" href="#infos">Infos pratiques</a>
+        </nav>
+        <div class="btn-menu-toggle" aria-label="Toggle navigation" aria-expanded="false" role="button">
+            <span class="lines"></span>
+            <span class="lines"></span>
+            <span class="lines"></span>
+        </div>
+    </header>
+
+    <main>
+        <section id="histoire">
+            <h2>Histoire du club</h2>
+        </section>
+        <section id="staff">
+            <h2>Staff</h2>
+        </section>
+        <section id="projets">
+            <h2>Projets et actions</h2>
+        </section>
+        <section id="infos">
+            <h2>Infos pratiques</h2>
+        </section>
+    </main>
+
+    <i class="las la-chevron-circle-up" id="btn-to-top"></i>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/function.js"></script>
+    <script src="../js/club.js"></script>
 </body>
 </html>
