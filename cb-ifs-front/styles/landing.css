@@ -72,7 +72,7 @@ h2 {
 
 .split.home {
     left: 0;
-    background: url('./ressources/images/win-game.jpg');
+    background: url('../../ressources/images/win-game.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -87,7 +87,7 @@ h2 {
 
 .split.shop {
     right: 0;
-    background: url('./ressources/images/shop.png');
+    background: url('../../ressources/images/shop.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
