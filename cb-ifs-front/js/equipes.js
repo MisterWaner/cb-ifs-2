@@ -134,6 +134,11 @@ const modalArray = [
         open: openBtn[22],
         modal: modal[22],
         close: closeBtn[22]
+    },
+    {
+        open: openBtn[23],
+        modal: modal[23],
+        close: closeBtn[23]
     }
 ];
 

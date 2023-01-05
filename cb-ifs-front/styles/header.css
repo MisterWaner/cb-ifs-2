@@ -18,8 +18,12 @@ html {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 70px;
+    height: 75px;
+    z-index: 9999;
     background-color: var(--green-color);
     user-select: none;
     display: inline-flex;
@@ -28,18 +32,18 @@ header {
 }
 
 .logo {
-    width: 7rem;
-    margin-left: 1.5rem;
+    width: 75px;
+    margin-left: 15px;
     cursor: pointer;
 }
 
 .menu-container {
     width: 100%;
-    line-height: 70px;
+    line-height: 75px;
     text-align: center;
 }
 .home-item {
-    line-height: 70px;
+    line-height: 75px;
 }
 .home-item,
 .menu-item {
@@ -79,12 +83,9 @@ header {
     }
 }
 @media screen and (max-width: 767px) {
-    header {
-        position: relative;
-    }
     .logo {
         position: absolute;
-        left: 1rem;
+        left: 10px;
         top: 50%;
         transform: translateY(-50%);
         margin-left: 0;
