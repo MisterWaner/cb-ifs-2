@@ -5,8 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../styles/anniversaire.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
 </head>
+
 <body>
+
+    <header>
+        <img class="logo" src="../../ressources/logo/logo-ifs.png" alt="logo du club de basket d'Ifs">
+        <a href="./home.html" class="home-item">Accueil</a>
+        <nav class="menu-container">
+            <a class="menu-item prog" href="#prog">Programmes</a>
+            <a class="menu-item story" href="#story">Historique</a>
+            <a class="menu-item reminder" href="#reminder">Partagez vos souvenirs</a>
+            <a class="menu-item interviews" href="#interwiews">Interviews</a>
+        </nav>
+        <div class="btn-menu-toggle" aria-label="Toggle navigation" aria-expanded="false" role="button">
+            <span class="lines"></span>
+            <span class="lines"></span>
+            <span class="lines"></span>
+        </div>
+    </header>
     
+    <main class="main-container">
+        <section id="prog" class="container">
+            <h2>Les<span class="span-h2"> 50 </span>ans : les dates et programme !</h2>
+            <div class="section-image">
+                <img src="../../ressources/logo/logo_cb_ifs_50 ans.png" alt="">
+            </div>
+            <article>
+                <h3>Les Dates :</h3>
+                <p>L'anniversaire des 50 ans du CB IFS se tiendra le week-end des 10 et 11 juin 2023.</p>
+            </article>
+        </section>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <section class="container" id="story">
+            <h2>Bref historique et dates marquantes.</h2>
+        </section>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <section class="container" id="reminder">
+            <h2>Partagez ici vos souvenirs</h2>
+        </section>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <section class="container" id="interviews">
+            <h2>Interviews</h2>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class='text-1'>
+            Site crée par &copy; <a target='_blank' href='https://www.erwan-soulas.fr'>Erwan Soulas</a> - Tous droits réservés - 2023
+        </p>
+        <div class='text-2'>
+            Nous suivre :
+            <a href="https://www.facebook.com/profile.php?id=100063781824194" target="_blank" >
+                <img class='facebook' src="../../ressources/logo/facebook.svg" alt="" />
+            </a>
+            <a href="https://www.instagram.com/cb_ifs/}" target="_blank">
+                <img class='instagram' src="../../ressources/logo/instagram.svg" alt="" />
+            </a>
+            <a href="https://www.linkedin.com/company/cb-ifs/" target="_blank">
+                <img class='linkedin' src="../../ressources/logo/linkedin.svg" alt="" />
+            </a>
+            <a href="https://www.youtube.com/@cbifs3091/featured" target="_blank">
+                <img class='youtube' src="../../ressources/logo/youtube.svg" alt="" />
+            </a>
+        </div>
+    </footer>
+
+    <script src="../js/function.js"></script>
+    <script src="../js/anniversaire.js"></script>
 </body>
 </html>

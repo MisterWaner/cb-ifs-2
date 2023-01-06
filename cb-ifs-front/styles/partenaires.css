@@ -116,22 +116,6 @@ h3:nth-child(3) {
     transform: scale(1.1);
     transition: all 0.2s ease;
 }
-#btn-to-top {
-    font-size: 6rem;
-    color: var(--green-color);
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    cursor: pointer;
-    opacity: 0;
-    transition: opacity 0.3s, color 0.5s;
-}
-#btn-to-top:hover {
-    color: #000;
-}
-#btn-to-top.show {
-    opacity: 1;
-}
 
 /********* CONTACT SECTION ***********/
 
@@ -220,12 +204,6 @@ h3:nth-child(3) {
     }
     .contact-txt {
         font-size: 1.5rem;
-    }
-    #btn-to-top {
-        font-size: 4rem;
-        bottom: 10px;
-        right: 10px;
-        color: var(--green-color);
     }
 }
 @media screen and (max-width: 615px) {

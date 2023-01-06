@@ -3,6 +3,10 @@
     font-family: 'Heaters';
     src: url(../fonts/Heaters.otf) format(opentype);
 }
+@font-face {
+    font-family:'Hey August' ;
+    src: url(../fonts/Hey\ August.ttf) format(truetype);
+}
 
 
 /************************* RESET *************************/
@@ -24,8 +28,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ---------------- MAIN CONTENT ------------------- */
-
+/* ------------ MAIN CONTENT ----------- */
 .main-container {
     width: 90%;
     height: auto;
@@ -46,13 +49,18 @@ body {
     font-weight: 400;
     user-select: none;
 }
+.span-h2 {
+    font-family: 'Hey August', sans-serif;
+    font-size: 4rem;
+    font-weight: 200;
+}
 .section-image {
     text-align: center;
     margin-bottom: 50px;
     margin-top: 50px;
 }
 .section-image img {
-    width: 90%;
+    width: 60%;
 }
 article {
     padding: 10px;
@@ -77,16 +85,4 @@ hr {
     height: 2px;
     border: none;
     border-radius: 15px;
-}
-.article-image {
-    padding: 25px;
-}
-.article-image img {
-    width: 75%;
-}
-.article-image:nth-child(3) {
-    text-align: end;
-}
-.article-image:nth-child(5) {
-    text-align: end;
 }

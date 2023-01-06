@@ -26,19 +26,3 @@ items.forEach(item => {
         btnMenu.classList.toggle('active');
     });
 });
-
-//GO TO TOP BUTTON
-const goToTopBtn = $('#btn-to-top');
-
-$(window).scroll(() => {
-    if ($(window).scrollTop() > 200) {
-        goToTopBtn.addClass('show');
-    } else {
-        goToTopBtn.removeClass('show');
-    }
-});
-
-goToTopBtn.on('click', (e) => {
-    e.preventDefault();
-    $('html, body').animate({scrollTop:0}, '200');
-});

@@ -82,6 +82,12 @@ header {
         font-size: 2rem;
     }
 }
+@media screen and (max-width: 800px) {
+    .home-item,
+    .menu-item {
+        font-size: 1.75rem;
+    }
+}
 @media screen and (max-width: 767px) {
     .logo {
         position: absolute;
