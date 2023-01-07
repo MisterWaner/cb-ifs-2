@@ -22,7 +22,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 75px;
+    height: 125px;
     z-index: 9999;
     background-color: var(--green-color);
     user-select: none;
@@ -32,26 +32,25 @@ header {
 }
 
 .logo {
-    width: 75px;
+    width: 125px;
     margin-left: 15px;
     cursor: pointer;
 }
-
 .menu-container {
     width: 100%;
-    line-height: 75px;
+    line-height: 125px;
     text-align: center;
 }
 .home-item {
-    line-height: 75px;
+    line-height: 125px;
 }
 .home-item,
 .menu-item {
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 200;
     text-decoration: none;
     color: #f1f1f1;
-    margin: 0 25px;
+    margin: 0 15px;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
@@ -67,7 +66,7 @@ header {
 @media screen and (max-width: 1200px) {
     .home-item,
     .menu-item {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 }
 @media screen and (max-width: 950px) {
@@ -108,7 +107,7 @@ header {
         position: absolute;
         display: none;
         background-color: rgba(0, 131, 72, 0.576);
-        top: 7rem;
+        top: 125px;
         line-height: unset;
         padding: 2rem;
         text-transform: uppercase;
@@ -123,10 +122,10 @@ header {
         transition: transform 0.3s ease-out;
     } 
     .menu-item {
-        margin: 1rem auto;
+        margin: 15px auto;
         display: block;
         width: fit-content;
-        font-size: 1.7rem;
+        font-size: 2rem;
     }
     .btn-menu-toggle {
         width: 26px;

@@ -27,7 +27,9 @@ body {
 }
 
 /*********************************** MAIN CONTENT **********************************/
-
+.main-container {
+    margin-top: 150px;
+}
 .container {
     width: 85%;
     margin: 20px auto;
@@ -59,12 +61,6 @@ h3:nth-child(3) {
 
 /********* MARQUEE *********/
 
-.bandeau {
-    margin-top: 30px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px var(--green-color);
-}
 .thanks-container {
     margin-top: 50px;
     width: 100%;

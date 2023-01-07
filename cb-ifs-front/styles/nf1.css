@@ -27,10 +27,13 @@ body {
 }
 
 /*********************************************** MAIN CONTENT ******************************************/
+.main-container {
+    margin-top: 150px;
+}
 .container {
     width: 90%;
     height: auto;
-    margin: 3rem auto;
+    margin: 30px auto;
 }
 .container h2 {
     text-align: center;
