@@ -6,9 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/actus.css">
+
 </head>
 <body>
     
+    <header>
+        <img class="logo" src="../../ressources/logo/logo-ifs.png" alt="logo du club de basket d'Ifs">
+        <a href="./home.html" class="home-item">Accueil</a>
+        <nav class="menu-container">
+            <a class="menu-item actus" href="#actus">Actualités du club</a>
+            <a class="menu-item presse" href="#presse">Presse</a>
+            <a class="menu-item events" href="#events">évènements</a>
+        </nav>
+        <div class="btn-menu-toggle" aria-label="Toggle navigation" aria-expanded="false" role="button">
+            <span class="lines"></span>
+            <span class="lines"></span>
+            <span class="lines"></span>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="container">
+            <h2>Actualités du club</h2>
+        </section>
+        <section class="container">
+            <h2>Revu de presse</h2>
+        </section>
+        <section class="container">
+            <h2>évènements</h2>
+        </section>
+    </main>
 
 
     <footer class="footer">
@@ -34,5 +63,8 @@
             Site crée par &copy; <a target='_blank' href='https://www.erwan-soulas.fr'>Erwan Soulas</a> - Tous droits réservés - 2023
         </div>
     </footer>
+
+
+    <script src="../js/function.js"></script>
 </body>
 </html>

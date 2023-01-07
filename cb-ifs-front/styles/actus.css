@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@font-face {
+    font-family: 'Heaters';
+    src: url(../fonts/Heaters.otf) format(opentype);
+}
+
+
+/************************* RESET *************************/
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+:root {
+    --green-color: #008348;
+}
+body {
+    height: 100vh;
+    font-family: 'League Gothic', sans-serif;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+}
+
+/* ----------------- MAIN CONTENT ------------------------- */
+.main-container {
+    width: 90%;
+    height: auto;
+    margin: 150px auto;
+}
+.container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.container h2 {
+    text-align: center;
+    letter-spacing: 0.3rem;
+    font-size: 5rem;
+    color: var(--green-color);
+    font-family: 'Heaters', sans-serif;
+    font-weight: 400;
+    user-select: none;
+}
